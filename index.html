@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpage Design</title>
-    <link rel = "stylesheet" href = "styles.css"/>
+    <link rel = "stylesheet" href = "style.css"/>
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+<div class = "brand">Saint Residence</div>
+        <div class = "menu" id = "menu">
         <nav>
             <ul>
-                <li><a href="#about"> About Me</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
+        </div>
+        <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Открыть меню">
+          <span class="hamburger-bars" aria-hidden="true">  
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+          </span>
+        </button>
+        <button class="btn" id="theme-toggle">Тёмная тема</button>
     </header>
     
     <section id = "about">
         <h2>About Me</h2>
-        <img src = "images/damson.jpeg"/>
+        <img src = "images/download.jpg" alt="Photo"/>
         <p>Hi, my name is Damson. I'm a web developer passionate about creating beautiful and functional websites.</p>
     </section>
 
