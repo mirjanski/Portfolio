@@ -1,10 +1,11 @@
 * { box-sizing: border-box; }
-html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; }
+html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; scroll-behavior: smooth;}
 
 body {
   background: #ffffff;
   color: #111111;
   transition: background-color .35s ease, color .35s ease;
+  min-height: 2000px;
 }
 body.dark {
   background: #121212;
@@ -22,21 +23,22 @@ header {
 }
 body.dark header { background: #1e1e1e; border-color: #2a2a2a; }
 
-.brand { font-weight: 700; font-size: 18px; }
+.brand { font-weight: 700; font-size: 24px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
 .btn {
   padding: 10px 14px;
   border: none;
   border-radius: 8px;
-  background: #0b66ff;
+  background: #000000;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
   transition: background-color .3s, transform .1s;
 }
-.btn:hover { background: #0056b3; }
+.btn:hover { background: #252525; }
 .btn:active { transform: translateY(1px); }
-body.dark .btn { background: #2f80ff; }
+body.dark .btn { background: #ffffff; }
+body.dark .btn { color: #000000;}
 
 .hamburger {
   width: 42px;
@@ -49,7 +51,7 @@ body.dark .btn { background: #2f80ff; }
   cursor: pointer;
   transition: border-color .25s ease;
 }
-body.dark .hamburger { border-color: #2a2a2a; }
+body.dark .hamburger { border-color: #000000; }
 
 .hamburger-bars { position: relative; width: 20px; height: 14px; }
 .bar { position: absolute; left: 0; right: 0; height: 2px; background: currentColor; border-radius: 2px; transition: transform .25s ease, opacity .2s ease; }
@@ -92,4 +94,25 @@ main { padding: 20px; text-align: center; }
   transition: background-color .35s, border-color .35s;
 }
 body.dark .card { background: #181818; border-color: #2a2a2a; }
+
+#backToTop {
+  position: fixed;      /* fixed to viewport */
+  bottom: 40px;         /* 40px from bottom */
+  right: 40px;          /* 40px from right */
+  display: none;        /* hide initially */
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #555;
+}
+
   
