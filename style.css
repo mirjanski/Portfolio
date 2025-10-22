@@ -12,6 +12,36 @@ body.dark {
   color: #f2f2f2;
 }
 
+
+h2{
+padding: auto;
+}
+#about {
+padding: 60px 10%;
+}
+
+.about-content{
+display: flex;
+align-items: center;
+justify-content: center;
+gap:2rem;
+margin-top: 20px;
+flex-wrap: wrap;
+}
+
+.about-content img{
+width: 200px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.about-content p {
+max-width: 500px;
+font-size: 1.2rem;
+line-height: 1.6;
+text-align: left;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -114,5 +144,7 @@ body.dark .card { background: #181818; border-color: #2a2a2a; }
 #backToTop:hover {
   background-color: #555;
 }
+
+
 
   
